@@ -10,9 +10,9 @@
     <a href="intropage.html" class="logo">Robotics: Designing and programming robots for various applications.</a>
     <nav>
       <ul>
-        <li><a href="signuppage.html">Sign Up/Log In</a></li>
-        <li><a href="contactuspage.html">Contact Us</a></li>
-        <li><a href="aboutuspage.html">About Us</a></li>
+        <li><a href="signuppage.html" target="_blank">Sign Up/Log In</a></li>
+        <li><a href="contactuspage.html" target="_blank">Contact Us</a></li>
+        <li><a href="aboutuspage.html" target="_blank">About Us</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
             <br>
             <input type="reset" value="Reset">
             <br>
-            <input type="submit" value="Submit">
+            <input onclick="submit()" type="submit" value="Submit">
             <br>
 
            </form>
@@ -51,6 +51,12 @@
   </footer>  
   
 </body>
+
+<script>
+  function submit() {
+            alert("Sent!");
+        }
+</script>
 
 <style>
   body {
